@@ -1,0 +1,73 @@
+{
+    "run_info": {
+        "run_id": "SET1-R21-E55846",
+        "graph_id": "GRAPH_49",
+        "status": "ERROR",
+        "total_ms": 21,
+        "timestamp": "2026-02-01T05:06:46.824287"
+    },
+    "execution_trace": [
+        {
+            "step": 1,
+            "block_id": "B_IF_00",
+            "class": "If",
+            "duration_ms": 1,
+            "input": {
+                "raw": 953.3404105712432
+            },
+            "output": {
+                "raw": 903.6412504630102
+            },
+            "triggered_links": [
+                "L_00_01"
+            ]
+        },
+        {
+            "step": 2,
+            "block_id": "B_IF_01",
+            "class": "If",
+            "duration_ms": 2,
+            "input": {
+                "raw": 903.6412504630102
+            },
+            "output": {
+                "raw": 969.2511676366726
+            },
+            "triggered_links": [
+                "L_01_02"
+            ]
+        },
+        {
+            "step": 3,
+            "block_id": "B_DIVIDE_02",
+            "class": "Divide",
+            "duration_ms": 18,
+            "input": {
+                "raw": 969.2511676366726
+            },
+            "output": {
+                "raw": 912.1699606178663
+            },
+            "triggered_links": [
+                "L_02_03"
+            ]
+        }
+    ],
+    "link_data": [
+        {
+            "link_id": "L_00_01",
+            "traversed": true,
+            "value": 903.6412504630102
+        },
+        {
+            "link_id": "L_01_02",
+            "traversed": true,
+            "value": 969.2511676366726
+        },
+        {
+            "link_id": "L_02_03",
+            "traversed": true,
+            "value": 912.1699606178663
+        }
+    ]
+}

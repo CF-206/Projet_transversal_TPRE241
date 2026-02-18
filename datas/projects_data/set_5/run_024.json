@@ -1,0 +1,86 @@
+{
+    "run_info": {
+        "run_id": "SET5-R24-BFEF9F",
+        "graph_id": "GRAPH_50",
+        "status": "ERROR",
+        "total_ms": 1348,
+        "timestamp": "2026-01-28T22:06:46.957566"
+    },
+    "execution_trace": [
+        {
+            "step": 1,
+            "block_id": "B_IF_00",
+            "class": "If",
+            "duration_ms": 2,
+            "input": {
+                "raw": 892.454292261567
+            },
+            "output": {
+                "raw": 911.2988201653429
+            },
+            "triggered_links": [
+                "L_00_01"
+            ]
+        },
+        {
+            "step": 2,
+            "block_id": "B_IF_01",
+            "class": "If",
+            "duration_ms": 7,
+            "input": {
+                "raw": 911.2988201653429
+            },
+            "output": {
+                "raw": 993.1752391791766
+            },
+            "triggered_links": [
+                "L_01_02"
+            ]
+        },
+        {
+            "step": 3,
+            "block_id": "B_DIVIDE_02",
+            "class": "Divide",
+            "duration_ms": 13,
+            "input": {
+                "raw": 993.1752391791766
+            },
+            "output": {
+                "raw": 1013.1735081762788
+            },
+            "triggered_links": [
+                "L_02_03"
+            ]
+        },
+        {
+            "step": 4,
+            "block_id": "B_EXTERNALCALL_03",
+            "class": "ExternalCall",
+            "duration_ms": 1326,
+            "input": {
+                "raw": 1013.1735081762788
+            },
+            "output": {
+                "raw": 1101.4027631376114
+            },
+            "triggered_links": []
+        }
+    ],
+    "link_data": [
+        {
+            "link_id": "L_00_01",
+            "traversed": true,
+            "value": 911.2988201653429
+        },
+        {
+            "link_id": "L_01_02",
+            "traversed": true,
+            "value": 993.1752391791766
+        },
+        {
+            "link_id": "L_02_03",
+            "traversed": true,
+            "value": 1013.1735081762788
+        }
+    ]
+}

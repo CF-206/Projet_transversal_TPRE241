@@ -1,0 +1,86 @@
+{
+    "run_info": {
+        "run_id": "SET5-R43-DF7F95",
+        "graph_id": "GRAPH_44",
+        "status": "SUCCESS",
+        "total_ms": 77,
+        "timestamp": "2026-02-13T07:06:46.969768"
+    },
+    "execution_trace": [
+        {
+            "step": 1,
+            "block_id": "B_DIVIDE_00",
+            "class": "Divide",
+            "duration_ms": 20,
+            "input": {
+                "raw": 117.14304216871574
+            },
+            "output": {
+                "raw": 111.24627033369885
+            },
+            "triggered_links": [
+                "L_00_01"
+            ]
+        },
+        {
+            "step": 2,
+            "block_id": "B_IF_01",
+            "class": "If",
+            "duration_ms": 3,
+            "input": {
+                "raw": 111.24627033369885
+            },
+            "output": {
+                "raw": 113.23870907727805
+            },
+            "triggered_links": [
+                "L_01_02"
+            ]
+        },
+        {
+            "step": 3,
+            "block_id": "B_VALIDATOR_02",
+            "class": "Validator",
+            "duration_ms": 24,
+            "input": {
+                "raw": 113.23870907727805
+            },
+            "output": {
+                "raw": 113.2741674822458
+            },
+            "triggered_links": [
+                "L_02_03"
+            ]
+        },
+        {
+            "step": 4,
+            "block_id": "B_FILTER_03",
+            "class": "Filter",
+            "duration_ms": 30,
+            "input": {
+                "raw": 113.2741674822458
+            },
+            "output": {
+                "raw": 106.7487415688528
+            },
+            "triggered_links": []
+        }
+    ],
+    "link_data": [
+        {
+            "link_id": "L_00_01",
+            "traversed": true,
+            "value": 111.24627033369885
+        },
+        {
+            "link_id": "L_01_02",
+            "traversed": true,
+            "value": 113.23870907727805
+        },
+        {
+            "link_id": "L_02_03",
+            "traversed": true,
+            "value": 113.2741674822458
+        }
+    ]
+}

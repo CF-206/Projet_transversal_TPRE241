@@ -1,0 +1,106 @@
+{
+    "run_info": {
+        "run_id": "SET1-R02-7F46E3",
+        "graph_id": "GRAPH_81",
+        "status": "SUCCESS",
+        "total_ms": 4372,
+        "timestamp": "2026-02-11T01:06:46.808813"
+    },
+    "execution_trace": [
+        {
+            "step": 1,
+            "block_id": "B_EXTERNALCALL_00",
+            "class": "ExternalCall",
+            "duration_ms": 1612,
+            "input": {
+                "raw": 324.2388215123966
+            },
+            "output": {
+                "raw": 338.98779492186327
+            },
+            "triggered_links": [
+                "L_00_01"
+            ]
+        },
+        {
+            "step": 2,
+            "block_id": "B_EXTERNALCALL_01",
+            "class": "ExternalCall",
+            "duration_ms": 1341,
+            "input": {
+                "raw": 338.98779492186327
+            },
+            "output": {
+                "raw": 343.40954998922774
+            },
+            "triggered_links": [
+                "L_01_02"
+            ]
+        },
+        {
+            "step": 3,
+            "block_id": "B_READVAR_02",
+            "class": "ReadVar",
+            "duration_ms": 12,
+            "input": {
+                "raw": 343.40954998922774
+            },
+            "output": {
+                "raw": 372.91918183870735
+            },
+            "triggered_links": [
+                "L_02_03"
+            ]
+        },
+        {
+            "step": 4,
+            "block_id": "B_EXTERNALCALL_03",
+            "class": "ExternalCall",
+            "duration_ms": 1406,
+            "input": {
+                "raw": 372.91918183870735
+            },
+            "output": {
+                "raw": 338.0838482687069
+            },
+            "triggered_links": [
+                "L_03_04"
+            ]
+        },
+        {
+            "step": 5,
+            "block_id": "B_IF_04",
+            "class": "If",
+            "duration_ms": 1,
+            "input": {
+                "raw": 338.0838482687069
+            },
+            "output": {
+                "raw": 329.0366545570172
+            },
+            "triggered_links": []
+        }
+    ],
+    "link_data": [
+        {
+            "link_id": "L_00_01",
+            "traversed": true,
+            "value": 338.98779492186327
+        },
+        {
+            "link_id": "L_01_02",
+            "traversed": true,
+            "value": 343.40954998922774
+        },
+        {
+            "link_id": "L_02_03",
+            "traversed": true,
+            "value": 372.91918183870735
+        },
+        {
+            "link_id": "L_03_04",
+            "traversed": true,
+            "value": 338.0838482687069
+        }
+    ]
+}
