@@ -5,7 +5,7 @@ import os
 liste_valid_files = []
 
 # Nom de ton dossier
-dossier = 'analayse_data'
+dossier = '../analayse_data'
 
 # verifie si le fichier est corompu ou non en tantant de l'ouvrire
 def json_corupt_or_not(chemin_fichier):
