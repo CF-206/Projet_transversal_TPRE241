@@ -39,10 +39,10 @@ if os.path.exists(dossier):
         # On ne vérifie que les fichiers (on ignore les sous-dossiers éventuels)
         if os.path.isfile(chemin_complet):
             if not nom.lower().endswith('.json'):
-                print(f"⚠️ Alerte : Le fichier '{nom}' n'est pas un JSON !")
+                print(f" Alerte : Le fichier '{nom}' n'est pas un JSON !")
                 allisjson = False
             else:
-                print(f"✅ {nom} est valide.")
+                print(f" {nom} est valide.")
                 # cette condition verifie si le fichier et lisible ou non grace a une fonction
                 if json_corupt_or_not(chemin_complet):
                     # ajoute a la liste des fichier qui son valide pour la suite
