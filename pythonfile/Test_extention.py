@@ -1,11 +1,16 @@
 import json
 import os
 
+# chemain vers ce script
+script_path = os.path.dirname(__file__)
+
+# chemain vers le dossier ou se trouve les json a analyser
+dossier = os.path.abspath(os.path.join(script_path,'..', 'analayse_data'))
+
+# dossier = '../analayse_data'
+
 # contient tout les fichier dont l'extention et bien .json
 liste_valid_files = []
-
-# Nom de ton dossier
-dossier = 'analayse_data'
 
 # verifie si le fichier est corompu ou non en tantant de l'ouvrire
 def json_corupt_or_not(chemin_fichier):
