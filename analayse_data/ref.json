@@ -1,0 +1,33 @@
+{
+    "run_info": {
+        "run_id": "SET3-",
+        "graph_id": "GRAPH_",
+        "status": "SUCCESS",
+        "total_ms": 7055,
+        "timestamp": "2026-02-10T01:06:46.877728"
+    },
+    "execution_trace": [
+        {
+            "step": 1,
+            "block_id": "B_",
+            "class": "WriteVar",
+            "duration_ms": 9,
+            "input": {
+                "raw": 933.5137480951585
+            },
+            "output": {
+                "raw": 914.0140708448222
+            },
+            "triggered_links": [
+                "L_00_01"
+            ]
+        }
+    ],
+    "link_data": [
+        {
+            "link_id": "L_00_01",
+            "traversed": true,
+            "value": 914.0140708448222
+        }
+    ]
+}

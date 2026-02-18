@@ -12,10 +12,6 @@ dossier = os.path.abspath(os.path.join(script_path,'..', 'analayse_data'))
 # contient tout les fichier dont l'extention et bien .json
 liste_valid_files = []
 
-
-# Nom de ton dossier
-dossier = '../analayse_data'
-
 # verifie si le fichier est corompu ou non en tantant de l'ouvrire
 def json_corupt_or_not(chemin_fichier):
     try:
@@ -25,6 +21,24 @@ def json_corupt_or_not(chemin_fichier):
     except (json.JSONDecodeError, IOError, UnicodeDecodeError):
         # Si une erreur survient (mauvais format, fichier vide, caractères bizarres)
         return False
+
+def analyser_donnees(chemin_complet):
+
+    script_path = os.path.dirname(__file__)
+
+    refjson = os.path.abspath(os.path.join(script_path,'..', 'analayse_data/ref.json'))
+
+    print(chemin_complet)
+    print(refjson)
+
+    try:
+        with open(refjson, 'r', encoding='utf-8') as f:
+            dataref = json.load(f) # On essaie de charger le contenu
+        with open(chemin_complet, 'r', encoding='utf-8') as g:
+            datassource = json.load(g)
+    except (json.JSONDecodeError, IOError, UnicodeDecodeError):
+        # Si une erreur survient (mauvais format, fichier vide, caractères bizarres)
+        return ""
 
 # On vérifie d'abord si le dossier existe pour éviter une erreur
 if os.path.exists(dossier):
@@ -46,7 +60,8 @@ if os.path.exists(dossier):
                 # cette condition verifie si le fichier et lisible ou non grace a une fonction
                 if json_corupt_or_not(chemin_complet):
                     # ajoute a la liste des fichier qui son valide pour la suite
-                    liste_valid_files.append(chemin_complet)
+                    analyser_donnees(chemin_complet)
+                    # liste_valid_files.append(chemin_complet)
                 else:
                     print(f"Erreur : Le fichier '{nom}' est imposible a ouvrire.")
     
@@ -54,4 +69,3 @@ if os.path.exists(dossier):
         print("\nParfait ! Tous les fichiers sont des JSON.")
 else:
     print(f"Erreur : Le dossier '{dossier}' n'existe pas.")
-
