@@ -1,17 +1,17 @@
 {
     "run_info": {
-        "run_id": "SET3-",
+        "run_id":"SET3-",
         "graph_id": "GRAPH_",
         "status": "SUCCESS",
-        "total_ms": 7055,
+        "total_ms": [0,60000],
         "timestamp": "2026-02-10T01:06:46.877728"
     },
     "execution_trace": [
         {
-            "step": 1,
+            "step": [0,1000],
             "block_id": "B_",
             "class": "WriteVar",
-            "duration_ms": 9,
+            "duration_ms": [0,10000],
             "input": {
                 "raw": 933.5137480951585
             },
@@ -19,13 +19,13 @@
                 "raw": 914.0140708448222
             },
             "triggered_links": [
-                "L_00_01"
+                "L_"
             ]
         }
     ],
     "link_data": [
         {
-            "link_id": "L_00_01",
+            "link_id": "L_",
             "traversed": true,
             "value": 914.0140708448222
         }
